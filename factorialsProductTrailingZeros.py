@@ -4,10 +4,8 @@ def factorialsProductTrailingZeros(l, r):
         x*=math.factorial(i)
     r=0
     d=list(str(x))
-    d=d[::-1]
-    for i in d:
-        if i=='0':
-            r+=1
+    for i in d[::-1]:
+        if i!='0':
+            return r
         else:
-            break
-    return  r
+            r+=1
