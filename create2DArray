@@ -1,8 +1,0 @@
-def create2DArray(lengths):
-    l=[]
-    for i in lengths:
-        s=[]
-        for j in range(0,i):
-            s.append(j)
-        l.append(s)
-    return l
